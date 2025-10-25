@@ -1,0 +1,24 @@
+{
+  "name": "my_tg-bot",
+  "version": "1.0.0",
+  "description": "bu men uchun yaratilgan bot",
+  "keywords": [],
+  "homepage": "https://github.com/MavjudabonuK/tg_8.2_bot#readme",
+  "bugs": {
+    "url": "https://github.com/MavjudabonuK/tg_8.2_bot/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MavjudabonuK/tg_8.2_bot.git"
+  },
+  "license": "Apache-2.0",
+  "author": "Komilova Mavjudabonu",
+  "type": "\"module\"",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
