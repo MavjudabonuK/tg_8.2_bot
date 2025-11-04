@@ -6,6 +6,7 @@ bot.on("message", function (msg) {
     const text = msg.text;
     console.log(msg)
     bot.sendMessage(chatId, `${text}`)
+    bot.sendDice(chatId)
 })
 
 console.log("Bot ishga tushdi...")    
