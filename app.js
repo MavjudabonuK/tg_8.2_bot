@@ -14,12 +14,18 @@ bot.on("message", function (msg) {
                 [{text: "Boshlash 🔥"}],
                 [{text: "Menu 🍔"}, {text: "Til 🌍"}]
             ],
+             resize_keyboard: true
         },
     });
     } else if (text == "/help") {
         bot.sendMessage(chatId, `Sizga qanday yordam, klerak, ${firstName}?`);
     }else if (text == "/sozlamalar") {
          bot.sendMessage(chatId, ` Bu sozlamalar ${firstName}?`)
+    }else if (text == "Boshlash 🔥") {
+         bot.sendMessage(chatId, ` Boshlanyapti... ${firstName}?`)
+    }else if (text == "Menu 🍔") {
+         bot.sendMessage(chatId, ` Menyuuuuu... ${firstName}?`)
+    }else if (text == "Til 🌍") {
+         bot.sendMessage(chatId, ` ... ${firstName}?`)
     }
-
 console.log("Bot ishga tushdi...")
