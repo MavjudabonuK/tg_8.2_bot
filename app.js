@@ -28,4 +28,5 @@ bot.on("message", function (msg) {
     }else if (text == "Til 🌍") {
          bot.sendMessage(chatId, ` ... ${firstName}?`)
     }
+})
 console.log("Bot ishga tushdi...")
