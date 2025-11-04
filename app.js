@@ -8,4 +8,4 @@ bot.on("message", function (msg) {
     bot.sendMessage(chatId, `${text}`)
 })
 
-console.log("Bot ishga tushdi...")
+console.log("Bot ishga tushdi...")    
