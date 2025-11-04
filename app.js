@@ -22,4 +22,4 @@ bot.on("message", function (msg) {
          bot.sendMessage(chatId, ` Bu sozlamalar ${firstName}?`)
     }
 
-console.log("Bot ishga tushdi...")    
+console.log("Bot ishga tushdi...")
