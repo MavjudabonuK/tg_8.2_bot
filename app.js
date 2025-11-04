@@ -26,7 +26,7 @@ bot.on("message", function (msg) {
     }else if (text == "Menu 🍔") {
          bot.sendMessage(chatId, ` Menyuuuuu... ${firstName}?`)
     }else if (text == "Til 🌍") {
-         bot.sendMessage(chatId, ` ... ${firstName}?`)
+         bot.sendMessage(chatId, ` Tilni tanlang ${firstName}?`)
     }
-})
+});
 console.log("Bot ishga tushdi...")
