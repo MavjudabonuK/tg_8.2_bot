@@ -4,9 +4,22 @@ const bot = new TelegramBot(TOKEN, { polling: true })
 bot.on("message", function (msg) {
     const chatId = msg.chat.id;
     const text = msg.text;
-    console.log(msg)
-    bot.sendMessage(chatId, `${text}`)
-    bot.sendDice(chatId)
-})
+    const firstName = msg.chat.first_name;
+    console.log(msg);
+
+    if (text == "/start") {
+        bot.sendMessage(chatId, `xush kelibsiz, ${firstName}` , {
+        reply_markur: {
+            keyboar: [
+                [{text: "Boshlash 🔥"}],
+                [{text: "Menu 🍔"}, {text: "Til 🌍"}]
+            ],
+        },
+    });
+    } else if (text == "/help") {
+        bot.sendMessage(chatId, `Sizga qanday yordam, klerak, ${firstName}?`);
+    }else if (text == "/sozlamalar") {
+         bot.sendMessage(chatId, ` Bu sozlamalar ${firstName}?`)
+    }
 
 console.log("Bot ishga tushdi...")    
